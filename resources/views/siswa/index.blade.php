@@ -10,7 +10,9 @@
             <h2 class="text-center">Data Siswa</h2>
         </div>
         <div class="card-body">
-            
+            <div class="d-flex justify-content-end">
+                <a href=' {{url('/siswa/create')}} ' class="btn btn-sm btn-outline-primary mb-3">Tambah Siswa</a>
+            </div>
             <table class="table table-bordered table-striped">
                 <thead>
                   <tr class="text-center">

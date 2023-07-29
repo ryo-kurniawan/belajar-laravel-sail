@@ -21,5 +21,9 @@ use Illuminate\Support\Facades\Route;
 
 // Home
 Route::get('/',[HomeController::class, 'index']);
-Route::get('siswa',[SiswaController::class, 'index']);
-Route::get('siswa/{id}',[SiswaController::class, 'detail']);
+// Siswa 
+// Route::get('siswa',[SiswaController::class, 'index']);
+// Route::get('siswa/{id}',[SiswaController::class, 'detail']);
+
+// Siswa dengan Resource
+Route::resource('siswa',SiswaController::class);
